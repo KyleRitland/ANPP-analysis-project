@@ -1,2 +1,8 @@
 # ANPP analysis project
- 
+
+ In this project, using data from the US Department of Agriculture, Agricultural Research Service, and the SC-ACIS (Applied Climate Information System), I analyze the relationship between aboveground net primary productivity (ANPP, a measure of plant biomass weight per unit area) of multiple plant species groups, and the average monthly precipitation and temperature data in north central Colorado, USA. This analysis is performed using support vector machine regression (SVR) estimators, which are supervised learning models, with tasks done include data cleaning, exploritory data analysis to determine viable routes of investigation, feature multicollinearity inspection and curating, model generation using hyperparameter tuned SVR estimators, and model evalutaion.
+
+Models were generated for each combination of sample collection site and known plant group species, along with three possible sets of features: average monthly precipitation, average monthly temerature, and both average monthly precipitation and temperature. All feature sets are insepcted for multicollinearity, with features optimally selected to decrease VIF values below 5 and maximize number of features.
+
+After model fitting and prediction evaluation, it was found that with present data over consistant date ranges, all sets of features were able to perform similarly well or poorly for a given site and plant group, implying multiple possible areas of further investigation, including adding more features, such as soil temperature data, or more filtering of feature sets, to improve performance. Using both monthly temperature and precipitation as model features generated the largest number of best performing models as measured using
+values, but the best performing models using that feature set could not do better than the best performing models using only monthly temperature as features.
