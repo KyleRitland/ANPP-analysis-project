@@ -6,3 +6,5 @@ Models were generated for each combination of sample collection site and known p
 
 After model fitting and prediction evaluation, it was found that with present data over consistant date ranges, all sets of features were able to perform similarly well or poorly for a given site and plant group, implying multiple possible areas of further investigation, including adding more features, such as soil temperature data, or more filtering of feature sets, to improve performance. Using both monthly temperature and precipitation as model features generated the largest number of best performing models as measured using
 values, but the best performing models using that feature set could not do better than the best performing models using only monthly temperature as features.
+
+To see report in broswer, [click here](https://github.com/KyleRitland/unsupervised-learning/blob/c469fc3149d4d240111b2bbacd3c52927293167f/final%20project.pdf).
